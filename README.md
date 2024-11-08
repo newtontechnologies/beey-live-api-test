@@ -20,3 +20,7 @@ python3 api-test.py <audio-file> <language>
 Where:
 - `<audio-file>` is the path to the WAV audio file to be transcribed
 - `<language>` is the language code to use for transcription (e.g., `en-US` for English, `cs-CZ` for Czech)
+
+### Audio file format
+
+The API works best with PCM s16le WAV files with a sample rate of 16 kHz. Other WAV formats may work, but have not been tested.
