@@ -7,10 +7,10 @@ import websocket
 import threading
 
 # WebSocket server URL
-SERVER_URL = "ws://stage.beey.io"
+SERVER_URL = "wss://stage.beey.io"
 
 # API token for the WebSocket server
-API_TOKEN = "xxxx"
+API_TOKEN = "beey__APITOKEN_auth caa1e70980ed486195d1761e9a61ded2"
 
 # Frame rate of the audio file
 SAMPLE_RATE = 16000
