@@ -5,12 +5,13 @@ import wave
 import time
 import websocket
 import threading
+import ssl
 
 # WebSocket server URL
 SERVER_URL = "wss://stage.beey.io"
 
 # API token for the WebSocket server
-API_TOKEN = "beey__APITOKEN_auth caa1e70980ed486195d1761e9a61ded2"
+API_TOKEN = "xxxx"
 
 # Frame rate of the audio file
 SAMPLE_RATE = 16000
@@ -87,7 +88,7 @@ def send_audio_chunks(file_path, language):
     )
 
     # Run the WebSocket client (listens for messages)
-    ws.run_forever()
+    ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
     ws.close()
     print("Connection closed")
 
