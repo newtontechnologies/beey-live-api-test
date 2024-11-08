@@ -13,6 +13,16 @@ This script reads a WAV audio file and sends its contents to the WebSocket serve
 
 ### Usage
 
+First, install the `websocket-client` library by running:
+
+```bash
+python3.10 -m pip install websocket-client==1.6.1
+```
+
+Second, replace the `API_TOKEN` variable in the script with your API token.
+
+Finally, run the script with the following command:
+
 ```bash
 python3 api-test.py <audio-file> <language>
 ```

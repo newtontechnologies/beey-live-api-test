@@ -9,8 +9,8 @@ import threading
 # WebSocket server URL
 SERVER_URL = "ws://stage.beey.io"
 
-# Auth token for the WebSocket server
-AUTH_TOKEN = "beey___apps_live_auth 1157c430e939481aab38f58ba4c9fc5b"
+# API token for the WebSocket server
+API_TOKEN = "xxxx"
 
 # Frame rate of the audio file
 SAMPLE_RATE = 16000
@@ -83,7 +83,7 @@ def send_audio_chunks(file_path, language):
         on_message=on_message,
         on_error=on_error,
         on_close=on_close,
-        header={"Authorization:" + AUTH_TOKEN}
+        header={"Authorization:" + API_TOKEN}
     )
 
     # Run the WebSocket client (listens for messages)
