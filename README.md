@@ -34,3 +34,10 @@ Where:
 ### Audio file format
 
 The API works best with PCM s16le WAV files with a sample rate of 16 kHz. Other WAV formats may work, but have not been tested.
+
+### Supported languages
+
+The API supports the following languages for live test transcriptions:
+
+- Czech (cs-CZ)
+- English (en-US)
