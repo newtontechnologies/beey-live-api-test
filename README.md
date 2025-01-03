@@ -1,4 +1,4 @@
-# Beey Live API Testing Utiluty
+# Beey Live API Testing Utility
 
 Testing utilities for Beey live transcription API
 
