@@ -2,16 +2,16 @@
 
 Testing utilities for Beey live transcription API
 
-## The `api-test.py` script
+This `api-test` script reads an audio stream from STDIN and sends its contents to the WebSocket server in chunks.
 
-This script reads an audio stream from STDIN and sends its contents to the WebSocket server in chunks.
-
-### Prerequisites and setup
+## Prerequisites
 
 - ffmpeg (for producing the audio stream)
 - Python 3.10 or later (earlier versions may work, but have not been tested)
 - The `python-dotenv` library
 - The `websocket-client` library (version 1.6.1)
+
+## Setup
 
 1. After installing ffmpeg and Python, install the required Python libraries by running the following command:
    ```bash
@@ -19,7 +19,7 @@ This script reads an audio stream from STDIN and sends its contents to the WebSo
    ```
 2. Rename the `.env.example` file to `.env` and fill in the AUTH_TOKEN with your API key.
 
-### Transcribing a WAV audio file
+## Transcribing a WAV audio file
 
 To transcribe a WAV audio file in, run the script with the following command:
 
@@ -33,7 +33,7 @@ Where:
 
 The API works best with PCM s16le WAV files with a sample rate of 16 kHz. Other WAV formats will probably work too.
 
-### Transcribing an AAC live audio stream
+## Transcribing an AAC live audio stream
 
 To transcribe a live stream with AAC audio, run the script with the following command:
 
