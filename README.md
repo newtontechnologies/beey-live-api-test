@@ -2,7 +2,7 @@
 
 Testing utilities for Beey live transcription API
 
-Thi `api-test.py` is a Python script that reads an audio stream from STDIN and sends its contents to the WebSocket server in chunks.
+The `api-test.py` is a Python script that reads an audio stream from STDIN and sends its contents to the WebSocket server in chunks.
 
 ## Prerequisites
 
