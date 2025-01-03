@@ -21,7 +21,7 @@ The `api-test.py` is a Python script that reads an audio stream from STDIN and s
 
 ## Transcribing a WAV audio file
 
-To transcribe a WAV audio file in, run the script with the following command:
+To transcribe a WAV audio file, run the script with the following command:
 
 ```bash
 ffmpeg -i <your-file.wav> -f wav pipe:1 | python3 api-test.py <language>
